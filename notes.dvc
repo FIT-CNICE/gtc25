@@ -1,0 +1,6 @@
+outs:
+- md5: 94783abfd072d587d8c091c5b23b3cdd.dir
+  size: 338348
+  nfiles: 24
+  hash: md5
+  path: notes

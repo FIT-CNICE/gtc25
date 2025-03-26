@@ -1,5 +1,5 @@
 ---
-title: "About This Analysis"
+title: "Analysis Philosophy and Methodology"
 ---
 
 This analysis was created based on a collection of notes prepared as Marp slide decks covering various topics related to AI infrastructure, networking, and data center technologies.
@@ -36,7 +36,7 @@ The analysis draws from over 20 technical notes covering topics such as:
 ## Technical Implementation
 1. **Session Recording Note Organizer:** A customized agent pipeline that employs Gemini 2.5 Pro and OpenAI Whisper.
 2. **Formatted Summary Generation:** A customized formatting agent that employs Anthropic Claude3.7
-3. **Executive Summary Prompt Engineering:** Draft by [Sizhe](https://github.com/fit-sizhe), refined by OpenAI O3-mini-high
+3. **Executive Summary Prompt Engineering:** Draft by [fit-sizhe](https://github.com/fit-sizhe), refined by OpenAI O3-mini-high
 4. **Github Page Build:** This site was built using [Quarto](https://quarto.org/), a scientific and technical publishing system. The visualizations were created using:
   - Python with Matplotlib for static visualizations
   - Observable JS for interactive visualizations

@@ -10,10 +10,12 @@ website:
         text: Home
       - href: EXEC_SUM.qmd
         text: Executive Summary
-      - href: EXEC_REPORT.qmd
+      - href: HW_REPORT.qmd
         text: Follow AI Hardware
+      - href: SW_REPORT.qmd
+        text: Follow AI Software
       - href: about.qmd
-        text: About
+        text: Methodology
 
 format:
   html:
