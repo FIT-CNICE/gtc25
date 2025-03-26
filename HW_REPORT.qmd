@@ -238,8 +238,8 @@ Autonomous vehicles represent one of the most demanding applications for interco
 ::: {.column-page}
 ```{ojs}
 // Import Observable Plot and Inputs
-import {Plot} from "npm:@observablehq/plot"
-import {Inputs} from "npm:@observablehq/inputs"
+// import {Plot} from "npm:@observablehq/plot"
+// import {Inputs} from "npm:@observablehq/inputs"
 
 // Input sliders
 viewof modelSize = Inputs.range([1, 200], {value: 70, step: 1, label: "Model Size (Billions of Parameters)"})

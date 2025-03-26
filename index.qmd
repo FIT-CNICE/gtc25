@@ -11,7 +11,7 @@ This site contains an executive analysis of strategies for following key AI tren
 - [Executive Summary](EXEC_SUM.qmd): General overview of following strategies for busy executive officers
 - [Follow AI Hardware Trends](HW_REPORT.qmd): Comprehensive analysis and strategic recommendations on following key hardware trends
 - [Follow AI Software Trends](SW_REPORT.qmd): Comprehensive analysis and strategic recommendations on following key software trends
-- [About](about.qmd): Information about this project
+- [Methodology](about.qmd): Philosophy and methodology behind this project
 
 ## Background
 
