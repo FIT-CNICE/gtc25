@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About This Analysis – Follow AI Trends for Interconnect Manufacturers</title>
+<title>About This Analysis – Follow AI: FIT Strategies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Follow AI Trends for Interconnect Manufacturers</span>
+    <span class="navbar-title">Follow AI: FIT Strategies</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,8 +93,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./EXEC_REPORT.html"> 
+    <a class="nav-link" href="./EXEC_SUM.html"> 
 <span class="menu-text">Executive Summary</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./EXEC_REPORT.html"> 
+<span class="menu-text">Follow AI Hardware</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
@@ -116,7 +120,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#approach-to-creating-cross-note-summary" id="toc-approach-to-creating-cross-note-summary" class="nav-link active" data-scroll-target="#approach-to-creating-cross-note-summary">Approach to Creating Cross-note Summary</a>
+  <ul class="collapse">
+  <li><a href="#weighting-notes-by-taxonomy-similarity" id="toc-weighting-notes-by-taxonomy-similarity" class="nav-link" data-scroll-target="#weighting-notes-by-taxonomy-similarity">Weighting Notes by Taxonomy Similarity</a></li>
+  <li><a href="#ensuring-market-and-technology-relevance" id="toc-ensuring-market-and-technology-relevance" class="nav-link" data-scroll-target="#ensuring-market-and-technology-relevance">Ensuring Market and Technology Relevance</a></li>
+  </ul></li>
   <li><a href="#source-materials" id="toc-source-materials" class="nav-link" data-scroll-target="#source-materials">Source Materials</a></li>
   <li><a href="#technical-implementation" id="toc-technical-implementation" class="nav-link" data-scroll-target="#technical-implementation">Technical Implementation</a></li>
   </ul>
@@ -145,15 +153,24 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This analysis was created based on a collection of notes prepared as Marp slide decks covering various topics related to AI infrastructure, networking, and data center technologies.</p>
-<section id="methodology" class="level2">
-<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<p>The executive summary was developed using the following methodology:</p>
+<section id="approach-to-creating-cross-note-summary" class="level2">
+<h2 class="anchored" data-anchor-id="approach-to-creating-cross-note-summary">Approach to Creating Cross-note Summary</h2>
+<p>My approach to crafting this executive summary focuses on extracting actionable insights from the provided notes that are most relevant to interconnect manufacturing in the context of AI trends. I’ve analyzed each note’s content and taxonomy to identify the most pertinent information that aligns with the challenges and opportunities facing a company specializing in high-precision interconnect manufacturing.</p>
+<section id="weighting-notes-by-taxonomy-similarity" class="level3">
+<h3 class="anchored" data-anchor-id="weighting-notes-by-taxonomy-similarity">Weighting Notes by Taxonomy Similarity</h3>
+<p>To ensure relevance, I’ve prioritized notes based on their taxonomy similarity to the main topic. Notes with taxonomies related to networking infrastructure, AI computing fabrics, data centers, and hardware connections have been given the highest weight. For example, materials covering “Networking &gt; GPU Clusters &gt; Spectrum-X” and “AI, Networking, Infrastructure” are weighted more heavily than general AI applications without hardware connectivity focus.</p>
+<p>The weighting methodology considers:</p>
 <ol type="1">
-<li><p><strong>Taxonomy-Based Weighting</strong>: Notes were weighted based on their taxonomy similarity to the main topic: “Strategies for Following Key AI Trends as Interconnect Manufacturer”.</p></li>
-<li><p><strong>Comprehensive Analysis</strong>: Notes were analyzed to extract key themes and insights relevant to interconnect manufacturing.</p></li>
-<li><p><strong>Strategic Focus</strong>: The analysis focused on identifying actionable strategic opportunities for interconnect manufacturers in the AI infrastructure market.</p></li>
-<li><p><strong>Data Visualization</strong>: The report includes static and interactive visualizations to illustrate key trends and opportunities.</p></li>
+<li>Direct relevance to interconnect manufacturing (highest weight)</li>
+<li>AI infrastructure and networking requirements (high weight)</li>
+<li>Market trends affecting data centers and AI computing (medium weight)</li>
+<li>General AI applications that may influence hardware requirements (lower weight)</li>
 </ol>
+</section>
+<section id="ensuring-market-and-technology-relevance" class="level3">
+<h3 class="anchored" data-anchor-id="ensuring-market-and-technology-relevance">Ensuring Market and Technology Relevance</h3>
+<p>To ensure this summary resonates with the current market and technology landscape, I’ve prioritized information about emerging networking standards, next-generation communication protocols, performance requirements for AI computing, and market adoption trends. By highlighting the most recent technology demonstrations mentioned in the notes (such as PCIe 6.0 and 7.0 standards) and connecting them to the company’s existing capabilities, I’ve created a forward-looking analysis that is firmly grounded in current market realities.</p>
+</section>
 </section>
 <section id="source-materials" class="level2">
 <h2 class="anchored" data-anchor-id="source-materials">Source Materials</h2>
@@ -168,7 +185,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="technical-implementation" class="level2">
 <h2 class="anchored" data-anchor-id="technical-implementation">Technical Implementation</h2>
-<p>This site was built using <a href="https://quarto.org/">Quarto</a>, a scientific and technical publishing system. The visualizations were created using:</p>
+<ol type="1">
+<li><strong>Session Recording Note Organizer:</strong> A customized agent pipeline that employs Gemini 2.5 Pro and OpenAI Whisper.</li>
+<li><strong>Formatted Summary Generation:</strong> A customized formatting agent that employs Anthropic Claude3.7</li>
+<li><strong>Executive Summary Prompt Engineering:</strong> Draft by <a href="https://github.com/fit-sizhe">Sizhe</a>, refined by OpenAI O3-mini-high</li>
+<li><strong>Github Page Build:</strong> This site was built using <a href="https://quarto.org/">Quarto</a>, a scientific and technical publishing system. The visualizations were created using:</li>
+</ol>
 <ul>
 <li>Python with Matplotlib for static visualizations</li>
 <li>Observable JS for interactive visualizations</li>

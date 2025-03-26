@@ -8,6 +8,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: EXEC_SUM.qmd
+        text: Executive Summary
       - href: EXEC_REPORT.qmd
         text: Follow AI Hardware
       - href: about.qmd

@@ -1,0 +1,8 @@
+---
+title: "Strategies for Following Key AI Software Trends"
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: true
+---

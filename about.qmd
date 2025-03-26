@@ -4,17 +4,24 @@ title: "About This Analysis"
 
 This analysis was created based on a collection of notes prepared as Marp slide decks covering various topics related to AI infrastructure, networking, and data center technologies.
 
-## Methodology
+## Approach to Creating Cross-note Summary
 
-The executive summary was developed using the following methodology:
+My approach to crafting this executive summary focuses on extracting actionable insights from the provided notes that are most relevant to interconnect manufacturing in the context of AI trends. I've analyzed each note's content and taxonomy to identify the most pertinent information that aligns with the challenges and opportunities facing a company specializing in high-precision interconnect manufacturing.
 
-1. **Taxonomy-Based Weighting**: Notes were weighted based on their taxonomy similarity to the main topic: "Strategies for Following Key AI Trends as Interconnect Manufacturer".
+### Weighting Notes by Taxonomy Similarity
 
-2. **Comprehensive Analysis**: Notes were analyzed to extract key themes and insights relevant to interconnect manufacturing.
+To ensure relevance, I've prioritized notes based on their taxonomy similarity to the main topic. Notes with taxonomies related to networking infrastructure, AI computing fabrics, data centers, and hardware connections have been given the highest weight. For example, materials covering "Networking > GPU Clusters > Spectrum-X" and "AI, Networking, Infrastructure" are weighted more heavily than general AI applications without hardware connectivity focus.
 
-3. **Strategic Focus**: The analysis focused on identifying actionable strategic opportunities for interconnect manufacturers in the AI infrastructure market.
+The weighting methodology considers:
 
-4. **Data Visualization**: The report includes static and interactive visualizations to illustrate key trends and opportunities.
+1. Direct relevance to interconnect manufacturing (highest weight)
+2. AI infrastructure and networking requirements (high weight)
+3. Market trends affecting data centers and AI computing (medium weight)
+4. General AI applications that may influence hardware requirements (lower weight)
+
+### Ensuring Market and Technology Relevance
+
+To ensure this summary resonates with the current market and technology landscape, I've prioritized information about emerging networking standards, next-generation communication protocols, performance requirements for AI computing, and market adoption trends. By highlighting the most recent technology demonstrations mentioned in the notes (such as PCIe 6.0 and 7.0 standards) and connecting them to the company's existing capabilities, I've created a forward-looking analysis that is firmly grounded in current market realities.
 
 ## Source Materials
 
@@ -27,8 +34,9 @@ The analysis draws from over 20 technical notes covering topics such as:
 - Technical specifications for next-generation interconnects
 
 ## Technical Implementation
-
-This site was built using [Quarto](https://quarto.org/), a scientific and technical publishing system. The visualizations were created using:
-
-- Python with Matplotlib for static visualizations
-- Observable JS for interactive visualizations
+1. **Session Recording Note Organizer:** A customized agent pipeline that employs Gemini 2.5 Pro and OpenAI Whisper.
+2. **Formatted Summary Generation:** A customized formatting agent that employs Anthropic Claude3.7
+3. **Executive Summary Prompt Engineering:** Draft by [Sizhe](https://github.com/fit-sizhe), refined by OpenAI O3-mini-high
+4. **Github Page Build:** This site was built using [Quarto](https://quarto.org/), a scientific and technical publishing system. The visualizations were created using:
+  - Python with Matplotlib for static visualizations
+  - Observable JS for interactive visualizations

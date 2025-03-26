@@ -1,5 +1,5 @@
 ---
-title: "AI Trends for Interconnect Manufacturers"
+title: "Following AI Trends for FIT"
 ---
 
 # Welcome
@@ -8,7 +8,9 @@ This site contains an executive analysis of strategies for following key AI tren
 
 ## Navigation
 
-- [Executive Summary](EXEC_REPORT.qmd): Comprehensive analysis and strategic recommendations
+- [Executive Summary](EXEC_SUM.qmd): General overview of following strategies for busy executive officers
+- [Follow AI Hardware Trends](HW_REPORT.qmd): Comprehensive analysis and strategic recommendations on following key hardware trends
+- [Follow AI Software Trends](SW_REPORT.qmd): Comprehensive analysis and strategic recommendations on following key software trends
 - [About](about.qmd): Information about this project
 
 ## Background
