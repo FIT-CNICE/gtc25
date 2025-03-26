@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "Follow AI: FIT Strategies"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: EXEC_REPORT.qmd
+        text: Follow AI Hardware
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

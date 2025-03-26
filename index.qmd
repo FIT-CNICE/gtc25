@@ -1,0 +1,24 @@
+---
+title: "AI Trends for Interconnect Manufacturers"
+---
+
+# Welcome
+
+This site contains an executive analysis of strategies for following key AI trends as an interconnect manufacturer. The analysis is based on a collection of notes from industry presentations and technical sessions.
+
+## Navigation
+
+- [Executive Summary](EXEC_REPORT.qmd): Comprehensive analysis and strategic recommendations
+- [About](about.qmd): Information about this project
+
+## Background
+
+With core competencies in design and precise manufacturing, our company provides high-precision connectors crucial to the performance of electronic products, particularly in data transmission applications. Our quick-to-ramp, high-volume and flexible production capabilities, along with collaborative relationships with industry-leading customers, give us a unique competitive advantage in the ICT industry.
+
+Recent demonstrations highlight our technological leadership:
+
+- PCIe 6.0 signal transmission through our CDFP SMT connector with a Passive DAC cable
+- PCIe 7.0-capable transmission through our OSFP-XD SMT connector with a Passive DAC cable
+- Solutions supporting critical applications in telecom/high-performance computing systems and data center configurations at 112 Gbps and beyond
+
+These capabilities position us to capitalize on the emerging trends in AI computing infrastructure.

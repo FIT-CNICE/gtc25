@@ -1,0 +1,104 @@
+/* CSS styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.content-block {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}
+
+/* For code blocks */
+pre.sourceCode {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: #f8f9fa !important;
+}
+
+.cell-output {
+  margin-top: 1rem;
+}
+
+/* For interactive visualizations */
+.ojs-wrapper {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Improve table styling */
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+}
+
+thead {
+  background-color: #f8f9fa;
+}
+
+/* Quote styling */
+blockquote {
+  padding: 0.5rem 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  border-left: 0.25rem solid #ced4da;
+  font-style: italic;
+}
+
+/* Print-friendly */
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  
+  h1 {
+    font-size: 24pt;
+  }
+  
+  h2 {
+    font-size: 18pt;
+  }
+  
+  h3 {
+    font-size: 14pt;
+  }
+}
