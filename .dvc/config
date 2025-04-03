@@ -1,2 +1,6 @@
 [cache]
     type = symlink
+[core]
+    remote = csl
+['remote "csl"']
+    url = ssh://fit-sizhe@10.193.91.161:22/srv/dev-data/fit-sizhe/gtc25
