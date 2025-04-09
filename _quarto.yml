@@ -8,6 +8,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: EXEC_PPT.qmd
+        text: Executive PPT Deck
       - href: EXEC_SUM.qmd
         text: Executive Summary
       - href: HW_REPORT.qmd
