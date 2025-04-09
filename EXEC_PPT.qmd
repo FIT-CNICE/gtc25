@@ -1,0 +1,224 @@
+---
+title: "GTC 2025: AI Trends & Strategic Implications for FIT"
+author:
+  - name: Sizhe Liu
+    email: sizhe.liu@fit-foxconn.com
+    affiliations:
+      - name: USRD, FIT
+format: 
+  revealjs:
+    theme: beige
+    logo: images/fit_logo2.png
+    slide-number: true
+    self-contained: true
+    code-fold: true
+    transition: slide
+    css: custom.css
+---
+
+## AI Compute Knows No Rest
+::: columns
+::: {.column width="31%" .small}
+* **Massive Scale:** AI demands unprecedented data throughput & compute **(10k-100k+ GPUs)**.
+
+![Huge scale spike](images/deck_1_adj.webp){height="300"}
+:::
+::: {.column width="2%"}
+:::
+::: {.column width="31%" .small}
+* **Infrastructure is Key:** Data centers become "AI Factories" needing ultra-high-speed, low-latency interconnects.
+
+![Data center -> AI factory](images/deck_2_adj.webp){height="300"}
+:::
+::: {.column width="2%"}
+:::
+::: {.column width="31%" .small}
+* **AI Application Booming:** Among 2900+ GTC sessions, only ~180 focused directly on compute hardware
+
+![Application is the mainstream](images/deck_3_adj.webp){height="300"}
+:::
+:::
+
+## Key Trend 1: Hardware & Infrastructure Scale {.smaller}
+
+*   **Massive GPU Clusters:** 50k-100k+ GPUs drive demand.
+*   **High-Performance Fabric:** 800G+ networks (IB/Ethernet), >95% utilization needed.
+*   **Evolving Standards:** PCIe 6.0/7.0 & CXL crucial for disaggregation/scale-up.
+
+![LLM compute and communication profiling showing bursty communication patterns](images/pave_compute_fabric.jpg){height="300"}
+
+## Key Trend 2: AI Transforming Design & Manufacturing {.smaller}
+
+::: columns
+::: {.column width="50%"}
+*   **AI-Driven Design:** Faster simulation, optimization, generation.
+*   **Smart Manufacturing:** Enhanced QC, process optimization (Digital Twins), predictive maintenance.
+*   **Human-Robot Collaboration:** Intuitive interaction, flexible automation.
+*   **FIT's Opportunity:** Leverage AI internally (Design, Mfg, QC) & explore customer solutions.
+:::
+::: {.column width="50%"}
+![YooDriveCloud Data Closed-loop Toolchain](images/referenced_images/data_closed_loop_toolchain.jpg){height="300"}
+:::
+:::
+
+## Key Trend 3: Specialized AI Domains Emerge
+
+::: columns
+::: {.column width="50%" .small}
+**AI Factories:**
+*   Heterogeneous compute
+*   Extreme power/thermal needs
+*   Rack-scale interconnects (DACs/Optics)
+
+**Industrial Robotics:**
+*   Ruggedized, low-latency, deterministic
+*   Harsh environments (TSN)
+
+**Autonomous Vehicles:**
+*   Safety-critical, high-bandwidth
+*   Resilient, compact
+
+**FIT's Strategy:** Develop domain-optimized interconnect families for these high-value markets.
+:::
+::: {.column width="50%" .small}
+![Industrial robotics requires specialized interconnects](images/industrial_robotics.jpg){height="200"}
+
+![Edge AI systems for autonomous vehicles](images/edge_ai.jpg){height="200"}
+:::
+:::
+
+## Evidence: Market Growth and Performace Gains 
+::: columns
+::: {.column width="50%" .tiny}
+```{python}
+#| label: fig-ai-infra-growth-ppt
+#| fig-cap: "Projected AI Infra & Interconnect Market Growth" # Shorter caption
+#| echo: false
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+years = [2024, 2025, 2026, 2027]
+ai_server_spending = [55, 85, 110, 140]  # In billions USD
+interconnect_market = [8, 14, 22, 35]    # In billions USD
+specialized_domains = [1.8, 4.2, 8.5, 16.7]  # Industrial/Robotics/Autonomous Vehicles
+
+fig, ax = plt.subplots(figsize=(6, 3)) # Adjusted size for slide
+
+width = 0.25
+x = np.arange(len(years))
+
+ax.bar(x - width, ai_server_spending, width, label='Total AI Server Spending', color='#4C72B0')
+ax.bar(x, interconnect_market, width, label='High-Speed Interconnect Market', color='#55A868')
+ax.bar(x + width, specialized_domains, width, label='Industrial/Robotics/AV Interconnects', color='#C44E52')
+
+# Simplified text labels for slides
+for i, v in enumerate(ai_server_spending):
+    ax.text(i - width, v, f'${v}B', ha='center', va='bottom', fontsize=9)
+    
+for i, v in enumerate(interconnect_market):
+    ax.text(i, v, f'${v}B', ha='center', va='bottom', fontsize=9)
+
+for i, v in enumerate(specialized_domains):
+    ax.text(i + width, v, f'${v}B', ha='center', va='bottom', fontsize=9)
+
+ax.set_ylabel('Market Size (Billions USD)')
+ax.set_title('Projected AI Infra & Interconnect Markets') 
+ax.legend(loc='upper left', fontsize='x-small') # Even smaller legend
+ax.set_xticks(x)
+ax.set_xticklabels(years, fontsize=9) # Smaller axis labels
+ax.tick_params(axis='y', labelsize=9) # Smaller axis labels
+ax.set_ylim(0, 160)
+
+plt.tight_layout()
+plt.show()
+```
+
+*   Significant growth projected in AI server spending & high-speed interconnects
+*   Specialized domains (Industrial, Robotics, AV) show rapid growth
+
+:::
+::: {.column width="50%" .tiny}
+
+```{ojs}
+//| fig-cap: "AI-Driven Mfg. Quality & Efficiency Gains"
+//| width: 600px
+//| echo: false
+
+// Define the data
+performanceData = [
+  {area: "Quality Control", traditional: 1.0, aiEnhanced: 2.3},
+  {area: "Design Efficiency", traditional: 1.0, aiEnhanced: 1.8},
+  {area: "Time-to-Market", traditional: 1.0, aiEnhanced: 1.5},
+  {area: "Resource Utilization", traditional: 1.0, aiEnhanced: 1.6},
+  {area: "Defect Reduction", traditional: 1.0, aiEnhanced: 2.1}
+]
+
+// Create the visualization with Plot
+Plot.plot({
+  marginLeft: 120,
+  marginRight: 40,
+  marginTop: 40,
+  marginBottom: 40,
+  height: 350, 
+  x: {
+    label: "Performance Multiplier",
+    domain: [0.5, 2.5],
+    grid: true
+  },
+  y: {
+    label: null,
+    domain: performanceData.map(d => d.area)
+  },
+  color: {
+    domain: ["Traditional Mfg.", "AI-Enhanced Mfg."], 
+    range: ["#808080", "#76b900"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(performanceData, {
+      y: "area", 
+      x: "traditional", 
+      fill: "Traditional Mfg.",
+      title: d => `${d.traditional}x`
+    }),
+    Plot.barX(performanceData, {
+      y: "area", 
+      x: "aiEnhanced", 
+      fill: "AI-Enhanced Mfg.",
+      title: d => `${d.aiEnhanced}x`
+    }),
+    Plot.ruleX([1], {stroke: "#999", strokeDasharray: "4,4"}),
+    Plot.text(performanceData, {
+      x: d => d.aiEnhanced + 0.1,
+      y: "area",
+      text: d => `${d.aiEnhanced}x`,
+      fontSize: 11, 
+      fill: "#333",
+      dx: 5
+    })
+  ]
+})
+```
+
+*   AI offers significant potential for improving Mfg. Quality, Efficiency, & Time-to-Market (relevant for FIT & customers).
+:::
+:::
+
+
+## Strategic Imperatives for FIT {.smaller}
+
+1.  **Lead High-Speed:** Drive PCIe 6/7, CXL, 112G+ SerDes. Maximize CDFP/OSFP-XD.
+2.  **Enable Architectures:** Solutions for disaggregation & scale-up (w/ partners like Alphawave).
+3.  **Specialize for AI:** Optimize for bursty traffic, low latency, reliability.
+4.  **Target Domains:** Tailored solutions for AI Factories, Industrial, Automotive.
+5.  **Manufacturing Excellence:** Leverage AI in 3 directions: precision, quality, scale.
+
+## Conclusion: FIT Enabling the AI Future
+
+::: {.small}
+*   The AI revolution hinges on high-performance interconnects – FIT's core strength.
+*   Market trends (scale, specialization, new standards) align perfectly with FIT's capabilities and recent successes (PCIe 6/7, CDFP/OSFP-XD).
+*   Strategic focus on high-speed leadership, domain specialization, and manufacturing excellence will solidify FIT's position as a critical enabler of AI infrastructure.
+*   **FIT is uniquely positioned to connect the future of AI.**
+:::

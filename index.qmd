@@ -8,7 +8,8 @@ This site contains an executive analysis of strategies for following key AI tren
 
 ## Navigation
 
-- [Executive Summary](EXEC_SUM.qmd): General overview of following strategies for busy executive officers
+- [Executive PPT Deck](EXEC_PPT.qmd): General overview of following strategies for busy executive officers through a PPT format
+- [Executive Summary](EXEC_SUM.qmd): General overview of following strategies for busy executive officers through a short essay
 - [Follow AI Hardware Trends](HW_REPORT.qmd): Comprehensive analysis and strategic recommendations on following key hardware trends
 - [Follow AI Software Trends](SW_REPORT.qmd): Comprehensive analysis and strategic recommendations on following key software trends
 - [Methodology](about.qmd): Philosophy and methodology behind this project

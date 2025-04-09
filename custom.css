@@ -1,0 +1,32 @@
+/* custom.css */
+
+/* --- Adjust Title Font Size --- */
+.reveal h2 { /* Targets main slide titles */
+  font-size: 1.5em; /* Example: Increase size. Default is often around 1.7em. Adjust as needed. */
+  /* You could also use pixels (e.g., 48px) or percentages (e.g., 150%) */
+}
+
+/* Optional: If you use H1 titles (# Title), target them too */
+.reveal h1 {
+  font-size: 2.8em; /* Example size for H1 */
+}
+
+/* --- Adjust Normal Text Font Size --- */
+.reveal .slides section p,
+.reveal .slides section li { /* Targets paragraphs and list items within slide sections */
+  font-size: 0.8em;
+}
+
+/* You might want to adjust line height as well for readability */
+.reveal .slides section p,
+.reveal .slides section li {
+    line-height: 1.5; /* Example line height */
+}
+
+.tiny {
+  font-size: 0.5em;
+}
+
+.small {
+  font-size: 0.8em;
+}
